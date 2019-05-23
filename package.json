@@ -1,0 +1,21 @@
+{
+  "name": "myho-test-zipdeploy",
+  "version": "1.0.0",
+  "description": "Azure Functions sample for the Serverless framework",
+  "scripts": {
+    "test": "echo \"No tests yet...\"",
+    "start": "func host start",
+    "dev": "rm -rf node_modules && npm install && sls deploy"
+  },
+  "keywords": [
+    "azure",
+    "serverless"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-azure-functions": "https://github.com/serverless/serverless-azure-functions",
+    "serverless-webpack": "^5.3.0",
+    "webpack": "^4.31.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
