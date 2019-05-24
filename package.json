@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"No tests yet...\"",
     "start": "func host start",
-    "dev": "rm -rf node_modules && npm install && sls deploy"
+    "clean": "rm -rf node_modules && npm install",
+    "link": "npm link /Users/home/dev/serverless-azure-functions",
+    "deploy": "npm run clean && npm run link && sls deploy"
   },
   "keywords": [
     "azure",
@@ -13,7 +15,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "serverless-azure-functions": "https://github.com/serverless/serverless-azure-functions",
+    "serverless-azure-functions": "^0.7.0",
     "serverless-webpack": "^5.3.0",
     "webpack": "^4.31.0",
     "webpack-node-externals": "^1.7.2"
